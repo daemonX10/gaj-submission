@@ -40,11 +40,3 @@ python run_batch_test.py --interactive
 - `batch_results/` - Output from batch processing
 
 
-
-## License
-
-[Specify your license information here]
-
-## Acknowledgements
-
-- [List any libraries, projects, or contributors you want to acknowledge] 
