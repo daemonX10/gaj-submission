@@ -1,0 +1,49 @@
+{
+  "file_path": ".\\test_samples\\wildfire-test-pe-file.exe",
+  "file_name": "wildfire-test-pe-file.exe",
+  "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 1.7547125816345215,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "file_path": ".\\test_samples\\wildfire-test-pe-file.exe",
+      "execution_info": {
+        "executed": true,
+        "execution_time": 0.015543937683105469,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "terminated": false,
+        "pid": 4676,
+        "children": []
+      },
+      "created_processes": [],
+      "file_changes": {
+        "created": [],
+        "modified": [],
+        "deleted": []
+      },
+      "network_activity": [],
+      "behavioral_indicators": [],
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "risk_score": 0
+    }
+  }
+}

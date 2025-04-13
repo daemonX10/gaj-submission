@@ -1,0 +1,16 @@
+{
+  "file_path": ".\\Dataset\\dataset_malwares.csv",
+  "file_name": "dataset_malwares.csv",
+  "file_hash": "a766eed81a5bead1f14cee2145c66b5268d23efd12f82f81adf71a53c6b76ebe",
+  "is_malware": false,
+  "confidence": 0,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "VirusTotal",
+  "processing_time": 0.06379437446594238,
+  "detailed_results": {
+    "virustotal": {
+      "error": "VirusTotal API key not configured"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "file_path": ".\\test_samples\\Updated Price List for 2025 Business Year.exe",
+  "file_name": "Updated Price List for 2025 Business Year.exe",
+  "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Trojan",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic,VirusTotal",
+  "processing_time": 3.54972505569458,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "file_path": ".\\test_samples\\Updated Price List for 2025 Business Year.exe",
+      "execution_info": {
+        "executed": false,
+        "execution_time": 0.01852130889892578,
+        "exit_code": null,
+        "stdout": "",
+        "stderr": "",
+        "terminated": false,
+        "pid": null,
+        "children": [],
+        "error": "[WinError 740] The requested operation requires elevation"
+      },
+      "created_processes": [],
+      "file_changes": {
+        "created": [],
+        "modified": [],
+        "deleted": []
+      },
+      "network_activity": [],
+      "behavioral_indicators": [],
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "risk_score": 0
+    },
+    "virustotal": {
+      "scan_id": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "scan_date": 1744516258,
+      "total": 76,
+      "positives": 52,
+      "sha256": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "md5": "240fecdabb3feabe4ce9e30fe2bbe287",
+      "permalink": "https://www.virustotal.com/gui/file/dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "scans": {
+        "Microsoft": {
+          "detected": true,
+          "result": "Trojan:MSIL/FormBook.LAT!MTB",
+          "version": "1.1.25030.1",
+          "update": "20250413"
+        },
+        "Kaspersky": {
+          "detected": true,
+          "result": "HEUR:Trojan-Spy.MSIL.Noon.gen",
+          "version": "22.0.1.28",
+          "update": "20250413"
+        },
+        "Symantec": {
+          "detected": true,
+          "result": "Scr.Malcode!gdn34",
+          "version": "1.22.0.0",
+          "update": "20250412"
+        }
+      },
+      "scan_summary": "Showing 3 of 52 positive detections (total scanned: 76)"
+    }
+  }
+}

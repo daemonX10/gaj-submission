@@ -1,0 +1,13 @@
+{
+  "file_path": "test_samples\\Malware.Calc.exe",
+  "file_name": "Malware.Calc.exe",
+  "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Unknown",
+  "risk_score": 49,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.6273550987243652,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": 

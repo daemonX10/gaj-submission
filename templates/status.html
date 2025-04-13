@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status - Malware Detection System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .header {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: 0.3rem;
+        }
+        .component-card {
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+        .status-available {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-unavailable {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .system-summary {
+            font-size: 1.2rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+            background-color: #fff;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        .status-badge {
+            font-size: 0.9rem;
+            padding: 0.25rem 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>System Status</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">System Status</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="system-summary">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <h3 class="mb-0">System Health</h3>
+                </div>
+                <div class="col-auto">
+                    {% set available_count = components.values()|selectattr('status', 'eq', 'available')|list|length %}
+                    {% set total_count = components|length %}
+                    {% set health_percentage = (available_count / total_count * 100)|round %}
+                    
+                    <div class="progress" style="width: 200px; height: 30px;">
+                        <div class="progress-bar 
+                            {% if health_percentage >= 80 %}bg-success
+                            {% elif health_percentage >= 50 %}bg-warning
+                            {% else %}bg-danger{% endif %}" 
+                            role="progressbar" 
+                            style="width: {{ health_percentage }}%" 
+                            aria-valuenow="{{ health_percentage }}" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            {{ health_percentage }}%
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="badge 
+                        {% if health_percentage >= 80 %}bg-success
+                        {% elif health_percentage >= 50 %}bg-warning
+                        {% else %}bg-danger{% endif %} status-badge">
+                        {% if health_percentage >= 80 %}
+                            System Healthy
+                        {% elif health_percentage >= 50 %}
+                            Limited Functionality
+                        {% else %}
+                            Critical Issues
+                        {% endif %}
+                    </span>
+                    <span class="text-muted">{{ available_count }} of {{ total_count }} components available</span>
+                </div>
+                <div class="col-auto ms-auto">
+                    <a href="/status" class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-arrow-clockwise"></i> Refresh
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card component-card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Component Status</h2>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for name, component in components.items() %}
+                                <tr>
+                                    <td>
+                                        <strong>{{ name|replace('_', ' ')|title }}</strong>
+                                    </td>
+                                    <td>
+                                        {% if component.status == 'available' %}
+                                            <span class="badge bg-success">Available</span>
+                                        {% else %}
+                                            <span class="badge bg-danger">Unavailable</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if component.error %}
+                                            <span class="text-danger">{{ component.error }}</span>
+                                        {% elif component.status == 'available' %}
+                                            <span class="text-success">Component loaded successfully</span>
+                                        {% else %}
+                                            <span class="text-muted">No additional information</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary" 
+                                                type="button" 
+                                                data-bs-toggle="collapse" 
+                                                data-bs-target="#details-{{ name }}" 
+                                                aria-expanded="false">
+                                            <i class="bi bi-info-circle"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="collapse" id="details-{{ name }}">
+                                    <td colspan="4" class="bg-light">
+                                        <div class="p-3">
+                                            <h5>Component Details</h5>
+                                            <dl class="row mb-0">
+                                                <dt class="col-sm-3">Type</dt>
+                                                <dd class="col-sm-9">{{ component.instance.__class__.__name__ if component.instance else 'N/A' }}</dd>
+                                                
+                                                <dt class="col-sm-3">Loading Status</dt>
+                                                <dd class="col-sm-9">{{ component.status }}</dd>
+                                                
+                                                {% if component.error %}
+                                                <dt class="col-sm-3">Error Message</dt>
+                                                <dd class="col-sm-9">
+                                                    <code>{{ component.error }}</code>
+                                                </dd>
+                                                {% endif %}
+                                                
+                                                {% if component.status == 'available' and component.instance %}
+                                                <dt class="col-sm-3">Methods</dt>
+                                                <dd class="col-sm-9">
+                                                    {% for method in component.instance.__class__.__dict__.keys() %}
+                                                        {% if not method.startswith('_') %}
+                                                            <span class="badge bg-secondary">{{ method }}</span>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </dd>
+                                                {% endif %}
+                                            </dl>
+                                            
+                                            {% if component.status != 'available' %}
+                                            <div class="alert alert-warning mt-3" role="alert">
+                                                <i class="bi bi-exclamation-triangle"></i> Fallback mechanisms will be used for this component.
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card component-card">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0">Fallback Information</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>When primary components are unavailable, the system automatically uses fallback mechanisms:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                ML Model Fallback
+                                <span class="badge bg-primary rounded-pill">Pattern-based detection</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Feature Extraction Fallback
+                                <span class="badge bg-primary rounded-pill">Basic file properties</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Document Analysis Fallback
+                                <span class="badge bg-primary rounded-pill">Basic content scanning</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dynamic Analysis Fallback
+                                <span class="badge bg-primary rounded-pill">Static analysis only</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card component-card">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Troubleshooting</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="troubleshootingAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        ML Model Not Loading
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#troubleshootingAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Check if model file exists at <code>ML_model/malwareclassifier-V2.pkl</code></li>
+                                            <li>Ensure joblib package is installed</li>
+                                            <li>Try reinstalling scikit-learn package</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Feature Extraction Issues
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#troubleshootingAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Check if pefile package is installed</li>
+                                            <li>Ensure Python-magic is configured correctly</li>
+                                            <li>Reinstall dependencies from requirements.txt</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        VirusTotal Scanner Configuration
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#troubleshootingAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Set your VirusTotal API key as environment variable: <code>VT_API_KEY</code></li>
+                                            <li>Ensure requests package is installed</li>
+                                            <li>Check your internet connection</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container mt-4 mb-4 text-center text-muted">
+        <p>&copy; 2024 Advanced Malware Detection System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

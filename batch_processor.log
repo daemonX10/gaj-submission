@@ -1,0 +1,738 @@
+2025-04-12 15:14:00,499 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-12 15:14:00,540 - BatchProcessor - INFO - Loaded document analyzer
+2025-04-12 15:14:00,547 - BatchProcessor - INFO - Loaded malware type detector
+2025-04-12 15:14:00,565 - BatchProcessor - ERROR - Error setting up dynamic analyzer: No module named 'psutil'
+2025-04-12 15:14:00,572 - BatchProcessor - ERROR - Error setting up VirusTotal scanner: No module named 'requests'
+2025-04-12 15:14:00,573 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-12 15:14:00,574 - BatchProcessor - INFO - Processing 4 files with 15 workers
+2025-04-12 15:14:00,579 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-12 15:14:00,580 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-12 15:14:00,581 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-12 15:14:00,582 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-12 15:14:00,821 - DocumentAnalyzer - INFO - Analyzing file: test_samples\circularlist.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:00,858 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Malware.Calc.exe, Type: PE32 executable (GUI) Intel 80386, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:00,869 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Hello.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:00,877 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32 executable (GUI) Intel 80386, for MS Windows
+2025-04-12 15:14:00,885 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:00,945 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:00,962 - DocumentAnalyzer - INFO - Analyzing file: test_samples\node.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:01,209 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:01,210 - BatchProcessor - ERROR - Error processing test_samples\Malware.Calc.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:01,369 - BatchProcessor - ERROR - Error processing test_samples\circularlist.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:01,375 - BatchProcessor - ERROR - Error processing test_samples\Hello.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:01,381 - BatchProcessor - ERROR - Error processing test_samples\node.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:01,391 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250412_151400
+2025-04-12 15:14:41,474 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-12 15:14:41,520 - BatchProcessor - INFO - Loaded document analyzer
+2025-04-12 15:14:41,522 - BatchProcessor - INFO - Loaded malware type detector
+2025-04-12 15:14:41,524 - BatchProcessor - ERROR - Error setting up dynamic analyzer: No module named 'psutil'
+2025-04-12 15:14:41,525 - BatchProcessor - ERROR - Error setting up VirusTotal scanner: No module named 'requests'
+2025-04-12 15:14:41,525 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-12 15:14:41,527 - BatchProcessor - INFO - Processing 4 files with 15 workers
+2025-04-12 15:14:41,531 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-12 15:14:41,532 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-12 15:14:41,533 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-12 15:14:41,534 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-12 15:14:41,815 - DocumentAnalyzer - INFO - Analyzing file: test_samples\circularlist.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:41,815 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:41,816 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Malware.Calc.exe, Type: PE32 executable (GUI) Intel 80386, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:41,861 - DocumentAnalyzer - INFO - Analyzing file: test_samples\node.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:41,863 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:41,863 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Hello.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:14:41,923 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32 executable (GUI) Intel 80386, for MS Windows
+2025-04-12 15:14:42,085 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:14:42,263 - BatchProcessor - ERROR - Error processing test_samples\node.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:42,308 - BatchProcessor - ERROR - Error processing test_samples\Malware.Calc.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:42,315 - BatchProcessor - ERROR - Error processing test_samples\circularlist.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:42,320 - BatchProcessor - ERROR - Error processing test_samples\Hello.exe: Object of type bool is not JSON serializable
+2025-04-12 15:14:42,329 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250412_151441
+2025-04-12 15:18:22,592 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-12 15:18:22,640 - BatchProcessor - INFO - Loaded document analyzer
+2025-04-12 15:18:22,641 - BatchProcessor - INFO - Loaded malware type detector
+2025-04-12 15:18:22,644 - BatchProcessor - ERROR - Error setting up dynamic analyzer: No module named 'psutil'
+2025-04-12 15:18:22,646 - BatchProcessor - ERROR - Error setting up VirusTotal scanner: No module named 'requests'
+2025-04-12 15:18:22,646 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-12 15:18:22,648 - BatchProcessor - INFO - Processing 4 files with 15 workers
+2025-04-12 15:18:22,657 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-12 15:18:22,658 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-12 15:18:22,659 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-12 15:18:22,660 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-12 15:18:22,991 - DocumentAnalyzer - INFO - Analyzing file: test_samples\node.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:18:22,992 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:18:22,992 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Malware.Calc.exe, Type: PE32 executable (GUI) Intel 80386, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:18:23,025 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Hello.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:18:23,043 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:18:23,044 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32 executable (GUI) Intel 80386, for MS Windows
+2025-04-12 15:18:23,117 - DocumentAnalyzer - INFO - Analyzing file: test_samples\circularlist.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 15:18:23,323 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 15:18:23,487 - BatchProcessor - INFO - Progress: 4/4 files processed
+2025-04-12 15:18:23,490 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250412_151822
+2025-04-12 16:45:44,162 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-12 16:45:44,191 - BatchProcessor - INFO - Loaded document analyzer
+2025-04-12 16:45:44,192 - BatchProcessor - INFO - Loaded malware type detector
+2025-04-12 16:45:44,194 - BatchProcessor - ERROR - Error setting up dynamic analyzer: No module named 'psutil'
+2025-04-12 16:45:44,196 - BatchProcessor - ERROR - Error setting up VirusTotal scanner: No module named 'requests'
+2025-04-12 16:45:44,196 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-12 16:45:44,197 - BatchProcessor - INFO - Processing 4 files with 15 workers
+2025-04-12 16:45:44,201 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-12 16:45:44,202 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-12 16:45:44,203 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-12 16:45:44,324 - DocumentAnalyzer - INFO - Analyzing file: test_samples\circularlist.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:45:44,324 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:45:44,346 - DocumentAnalyzer - INFO - Analyzing file: test_samples\node.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:45:44,347 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:45:44,371 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Hello.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:45:44,456 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:45:44,528 - BatchProcessor - INFO - Progress: 4/4 files processed
+2025-04-12 16:45:44,529 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250412_164544
+2025-04-12 16:49:03,816 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-12 16:49:03,838 - BatchProcessor - INFO - Loaded document analyzer
+2025-04-12 16:49:03,839 - BatchProcessor - INFO - Loaded malware type detector
+2025-04-12 16:49:03,841 - BatchProcessor - ERROR - Error setting up dynamic analyzer: No module named 'psutil'
+2025-04-12 16:49:03,842 - BatchProcessor - ERROR - Error setting up VirusTotal scanner: No module named 'requests'
+2025-04-12 16:49:03,842 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-12 16:49:03,843 - BatchProcessor - INFO - Processing 4 files with 15 workers
+2025-04-12 16:49:03,846 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-12 16:49:03,847 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-12 16:49:03,848 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-12 16:49:03,872 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-12 16:49:03,994 - DocumentAnalyzer - INFO - Analyzing file: test_samples\circularlist.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:49:03,995 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:49:04,018 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Hello.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:49:04,019 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:49:04,030 - DocumentAnalyzer - INFO - Analyzing file: test_samples\Malware.Calc.exe, Type: PE32 executable (GUI) Intel 80386, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:49:04,061 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32 executable (GUI) Intel 80386, for MS Windows
+2025-04-12 16:49:04,076 - DocumentAnalyzer - INFO - Analyzing file: test_samples\node.exe, Type: PE32+ executable (console) x86-64, for MS Windows, MIME: application/x-dosexec
+2025-04-12 16:49:04,180 - DocumentAnalyzer - WARNING - Unsupported file type for detailed analysis: PE32+ executable (console) x86-64, for MS Windows
+2025-04-12 16:49:04,244 - BatchProcessor - INFO - Progress: 4/4 files processed
+2025-04-12 16:49:04,246 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250412_164903
+2025-04-13 08:24:22,754 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-13 08:24:22,781 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:24:22,781 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:24:22,817 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_fi9c99mj
+2025-04-13 08:24:22,817 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:24:23,187 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:24:23,187 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:24:23,187 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-13 08:24:23,187 - BatchProcessor - INFO - Processing 4 files with 1 workers
+2025-04-13 08:24:23,192 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 08:24:24,337 - DynamicAnalysis - INFO - Executing file: test_samples\circularlist.exe
+2025-04-13 08:24:29,578 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 08:24:29,582 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 08:24:29,807 - DynamicAnalysis - INFO - Executing file: test_samples\Hello.exe
+2025-04-13 08:24:32,660 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 08:24:32,665 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 08:24:32,893 - DynamicAnalysis - INFO - Executing file: test_samples\Malware.Calc.exe
+2025-04-13 08:24:35,371 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 08:24:35,375 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 08:24:35,685 - DynamicAnalysis - INFO - Executing file: test_samples\node.exe
+2025-04-13 08:24:38,336 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 08:24:38,337 - BatchProcessor - INFO - Progress: 4/4 files processed
+2025-04-13 08:24:38,338 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_082423
+2025-04-13 08:25:25,638 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-13 08:25:25,652 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:25:25,693 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:25:25,698 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_8pkmo57p
+2025-04-13 08:25:25,698 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:25:26,180 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:25:26,180 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:25:26,180 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-13 08:25:26,182 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 08:25:26,187 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 08:25:27,014 - DynamicAnalysis - INFO - Executing file: test_samples\circularlist.exe
+2025-04-13 08:25:29,762 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:29,762 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 08:25:30,179 - DynamicAnalysis - INFO - Executing file: test_samples\Hello.exe
+2025-04-13 08:25:32,931 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:32,935 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 08:25:33,327 - DynamicAnalysis - INFO - Executing file: test_samples\Malware.Calc.exe
+2025-04-13 08:25:36,679 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:36,680 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 08:25:37,124 - DynamicAnalysis - INFO - Executing file: test_samples\node.exe
+2025-04-13 08:25:40,413 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:40,416 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 08:25:41,054 - DynamicAnalysis - INFO - Executing file: test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 08:25:42,695 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 08:25:45,970 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:45,972 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 08:25:46,517 - DynamicAnalysis - INFO - Executing file: test_samples\wildfire-test-pe-file.exe
+2025-04-13 08:25:50,877 - BatchProcessor - ERROR - Error in dynamic analysis of wildfire-test-pe-file.exe: 'int' object has no attribute 'get'
+2025-04-13 08:25:50,879 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 08:25:50,880 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_082526
+2025-04-13 08:41:28,859 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-13 08:41:28,882 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:41:28,888 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:41:28,894 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_zexcbsw8
+2025-04-13 08:41:28,894 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:41:29,207 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:41:29,207 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:41:29,207 - BatchProcessor - INFO - Processing directory: test_samples (recursive=True)
+2025-04-13 08:41:29,207 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 08:41:29,213 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 08:41:29,774 - DynamicAnalysis - INFO - Executing file: test_samples\circularlist.exe
+2025-04-13 08:41:31,908 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:31,910 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 08:41:32,188 - DynamicAnalysis - INFO - Executing file: test_samples\Hello.exe
+2025-04-13 08:41:34,303 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:34,304 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 08:41:34,559 - DynamicAnalysis - INFO - Executing file: test_samples\Malware.Calc.exe
+2025-04-13 08:41:37,202 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:37,207 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 08:41:37,461 - DynamicAnalysis - INFO - Executing file: test_samples\node.exe
+2025-04-13 08:41:39,333 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:39,334 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 08:41:39,695 - DynamicAnalysis - INFO - Executing file: test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 08:41:39,705 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 08:41:41,526 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:41,526 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 08:41:41,784 - DynamicAnalysis - INFO - Executing file: test_samples\wildfire-test-pe-file.exe
+2025-04-13 08:41:43,623 - BatchProcessor - ERROR - Error in dynamic analysis of wildfire-test-pe-file.exe: 'int' object has no attribute 'get'
+2025-04-13 08:41:43,624 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 08:41:43,624 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_084129
+2025-04-13 08:47:26,990 - BatchProcessor - INFO - Loaded ML model analyzer
+2025-04-13 08:47:27,011 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:47:27,014 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:47:27,055 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_q7py_lcf
+2025-04-13 08:47:27,055 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:47:27,553 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:47:27,553 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:47:27,553 - BatchProcessor - INFO - Processing 1 files with 1 workers
+2025-04-13 08:47:27,565 - BatchProcessor - INFO - Processing file: dataset_malwares.csv
+2025-04-13 08:47:27,633 - BatchProcessor - INFO - Progress: 1/1 files processed
+2025-04-13 08:47:27,637 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_084727
+2025-04-13 08:48:45,670 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 08:48:46,458 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 08:48:46,459 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:48:46,459 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:48:46,468 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_q9dgu_4d
+2025-04-13 08:48:46,468 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:48:46,720 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:48:46,720 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:48:46,721 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 08:48:46,729 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 08:48:47,727 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 08:48:49,331 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 08:48:49,335 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 08:48:49,848 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 08:48:51,604 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 08:48:51,605 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 08:48:51,889 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 08:48:55,414 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 08:48:55,416 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 08:48:56,591 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 08:48:59,646 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 08:48:59,646 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 08:49:02,393 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 08:49:02,410 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 08:49:04,786 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: 'int' object has no attribute 'get'
+2025-04-13 08:49:04,786 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 08:49:05,339 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 08:49:15,604 - BatchProcessor - ERROR - Error in dynamic analysis of wildfire-test-pe-file.exe: 'int' object has no attribute 'get'
+2025-04-13 08:49:15,833 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 08:49:15,836 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_084846
+2025-04-13 08:54:03,417 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 08:54:10,254 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 08:54:10,324 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 08:54:10,332 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 08:54:10,341 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_bruu1vkf
+2025-04-13 08:54:10,341 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 08:54:11,289 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 08:54:11,289 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 08:54:11,296 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 08:54:11,355 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 08:54:14,608 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 08:54:17,595 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:17,598 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 08:54:18,269 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 08:54:21,308 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:21,310 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 08:54:22,464 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 08:54:26,642 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:26,644 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 08:54:27,166 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 08:54:37,744 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:37,756 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 08:54:40,666 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 08:54:40,683 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 08:54:43,352 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:43,359 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 08:54:44,421 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 08:54:46,808 - BatchProcessor - ERROR - Error in dynamic analysis of wildfire-test-pe-file.exe: 'int' object has no attribute 'get'
+2025-04-13 08:54:46,813 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 08:54:46,815 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_085411
+2025-04-13 09:00:56,502 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:00:58,252 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:00:58,258 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:00:58,258 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:00:58,262 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_cbili2n9
+2025-04-13 09:00:58,262 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:00:58,551 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 09:00:58,551 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 09:00:58,552 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:00:58,555 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:00:59,026 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:01:01,113 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:01,122 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:01:01,395 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:01:03,473 - BatchProcessor - ERROR - Error in dynamic analysis of Hello.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:03,473 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:01:03,740 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:01:05,844 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:05,845 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:01:06,606 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:01:09,001 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:09,003 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:01:09,455 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:01:09,467 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:01:11,887 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:11,887 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:01:12,279 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:01:14,988 - BatchProcessor - ERROR - Error in dynamic analysis of wildfire-test-pe-file.exe: 'int' object has no attribute 'get'
+2025-04-13 09:01:14,997 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:01:14,997 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_090058
+2025-04-13 09:03:23,229 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:03:29,212 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:03:29,228 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:03:29,233 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:03:29,578 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_436rowpa
+2025-04-13 09:03:29,578 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:03:30,777 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 09:03:30,781 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 09:03:30,784 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:03:30,796 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:03:33,418 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:03:35,858 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:03:36,349 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:03:38,541 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:03:38,934 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:03:42,036 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:03:42,439 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:03:45,254 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:03:45,505 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:03:45,530 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:03:47,457 - BatchProcessor - ERROR - Error in dynamic analysis of Updated Price List for 2025 Business Year.exe: can only join an iterable
+2025-04-13 09:03:47,458 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:03:47,707 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:03:49,763 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:03:49,763 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_090330
+2025-04-13 09:03:57,980 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:03:58,552 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:03:58,557 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:03:58,557 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:03:58,560 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_zdnvf7wj
+2025-04-13 09:03:58,560 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:03:58,788 - VirusTotal-API - WARNING - VirusTotal API key not found. Functionality will be limited.
+2025-04-13 09:03:58,788 - BatchProcessor - INFO - Loaded VirusTotal scanner
+2025-04-13 09:03:58,790 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:03:58,794 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:03:59,541 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:04:01,804 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:04:02,046 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:04:04,368 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:04:04,627 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:04:07,406 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:04:07,749 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:04:10,405 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:04:10,835 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:04:10,838 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:04:13,299 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:04:13,645 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:04:16,208 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:04:16,209 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_090358
+2025-04-13 09:08:45,191 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:08:45,633 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:08:45,633 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:08:45,633 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:08:45,643 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis__1juf4_l
+2025-04-13 09:08:45,643 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:08:45,810 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 09:08:45,812 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:08:45,814 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:08:46,102 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:08:47,747 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:08:47,962 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:08:49,508 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:08:49,681 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:08:51,471 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:08:51,704 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:08:53,203 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:08:53,430 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:08:53,430 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:08:54,897 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:08:55,054 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:08:56,654 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:08:56,655 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_090845
+2025-04-13 09:11:10,202 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:11:10,774 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:11:10,774 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:11:10,774 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:11:10,784 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_bkej03o7
+2025-04-13 09:11:10,784 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:11:11,013 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 09:11:11,016 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:11:11,019 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:11:11,437 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:11:14,338 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:11:14,575 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:11:17,455 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:11:17,681 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:11:20,260 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:11:20,548 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:11:23,183 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:11:23,447 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:11:23,459 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:11:25,904 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:11:26,165 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:12:29,737 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:12:29,737 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_091111
+2025-04-13 09:14:56,706 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:14:57,274 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:14:57,274 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:14:57,274 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:14:57,281 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_n0tgxne4
+2025-04-13 09:14:57,281 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:14:57,445 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 09:14:57,447 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:14:57,449 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:14:57,842 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:14:59,974 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:15:00,187 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:15:02,150 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:15:02,419 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:15:04,281 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:15:04,481 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:15:06,414 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:15:06,614 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:15:06,617 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:15:08,518 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:15:08,832 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:15:11,713 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:15:11,713 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_091457
+2025-04-13 09:16:56,544 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:16:58,191 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:16:58,196 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:16:58,196 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:16:58,205 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_y5bbp1hd
+2025-04-13 09:16:58,205 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:43:11,239 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 09:43:11,247 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:43:11,281 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:43:12,611 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:43:15,438 - BatchProcessor - ERROR - Error in dynamic analysis of circularlist.exe: can only join an iterable
+2025-04-13 09:43:16,117 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:43:17,245 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:43:23,442 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:43:24,372 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:43:26,845 - BatchProcessor - ERROR - Error in dynamic analysis of Malware.Calc.exe: can only join an iterable
+2025-04-13 09:43:27,352 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:43:28,022 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:43:31,118 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:43:32,064 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:43:32,088 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:43:34,669 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:43:35,071 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:43:37,604 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:43:37,607 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_094311
+2025-04-13 09:43:43,909 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:43:45,640 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:43:45,648 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:43:45,651 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:43:45,655 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_ysnu9usl
+2025-04-13 09:43:45,655 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:43:46,049 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 09:43:46,093 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:43:46,128 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:43:46,654 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:43:48,924 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:43:49,218 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:43:51,651 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:43:52,057 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:43:54,808 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:43:55,203 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:43:57,704 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:43:58,145 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:43:58,157 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:44:00,625 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:44:00,930 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:44:31,040 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:44:31,040 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_094346
+2025-04-13 09:48:10,958 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:48:14,226 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:48:14,252 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:48:14,254 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:48:14,261 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_bkgmln4p
+2025-04-13 09:48:14,261 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:48:14,639 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 09:48:14,654 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:48:14,658 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:48:15,219 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:48:17,666 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:48:18,160 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:48:20,504 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:48:20,788 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:48:23,660 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:48:23,998 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:48:26,114 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:48:26,404 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:48:26,424 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:48:28,603 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:48:28,856 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:48:31,012 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:48:31,012 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_094814
+2025-04-13 09:48:39,937 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:48:40,639 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 09:48:40,645 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 09:48:40,648 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 09:48:40,648 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_a2_2tkt_
+2025-04-13 09:48:40,648 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 09:48:40,853 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 09:48:40,856 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 09:48:40,859 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 09:48:41,746 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 09:48:43,905 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 09:48:44,153 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 09:48:46,264 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 09:48:46,483 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 09:48:48,719 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 09:48:49,031 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 09:48:51,202 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 09:48:51,553 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 09:48:51,559 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 09:48:53,864 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 09:48:54,130 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 09:48:56,439 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 09:48:56,439 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_094840
+2025-04-13 10:17:41,814 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:17:46,103 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:17:46,113 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:17:46,119 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:17:46,123 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_m2hfkfuh
+2025-04-13 10:17:46,123 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:17:46,508 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:17:46,513 - BatchProcessor - INFO - Processing 6 files with 1 workers
+2025-04-13 10:17:46,521 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:17:47,317 - DynamicAnalysis - INFO - Executing file: .\test_samples\circularlist.exe
+2025-04-13 10:17:49,888 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:17:50,579 - DynamicAnalysis - INFO - Executing file: .\test_samples\Hello.exe
+2025-04-13 10:17:54,170 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:17:55,102 - DynamicAnalysis - INFO - Executing file: .\test_samples\Malware.Calc.exe
+2025-04-13 10:17:57,742 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:17:58,132 - DynamicAnalysis - INFO - Executing file: .\test_samples\node.exe
+2025-04-13 10:18:02,074 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:18:02,523 - DynamicAnalysis - INFO - Executing file: .\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:18:02,533 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:18:05,073 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:18:05,545 - DynamicAnalysis - INFO - Executing file: .\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:18:07,949 - BatchProcessor - INFO - Progress: 6/6 files processed
+2025-04-13 10:18:07,950 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_101746
+2025-04-13 10:18:55,011 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:18:56,312 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:18:56,321 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:18:56,321 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:18:56,326 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_1l2a8twp
+2025-04-13 10:18:56,326 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:18:56,612 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:18:56,615 - BatchProcessor - INFO - Processing 1 files with 1 workers
+2025-04-13 10:18:56,622 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:18:57,149 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:19:00,005 - BatchProcessor - INFO - Progress: 1/1 files processed
+2025-04-13 10:19:00,009 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_101856
+2025-04-13 10:19:35,362 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:19:36,026 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:19:36,037 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:19:36,039 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:19:36,041 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_469bghif
+2025-04-13 10:19:36,041 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:19:36,333 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:19:36,335 - BatchProcessor - INFO - Processing 1 files with 1 workers
+2025-04-13 10:19:36,339 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:19:36,346 - BatchProcessor - INFO - Progress: 1/1 files processed
+2025-04-13 10:19:36,348 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_101936
+2025-04-13 10:19:52,619 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:19:53,198 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:19:53,206 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:19:53,208 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:19:53,211 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_tc5pjy0o
+2025-04-13 10:19:53,211 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:19:53,469 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:19:53,501 - BatchProcessor - INFO - Processing 1 files with 1 workers
+2025-04-13 10:19:53,513 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:19:53,898 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:19:56,367 - BatchProcessor - INFO - Progress: 1/1 files processed
+2025-04-13 10:19:56,369 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_101953
+2025-04-13 10:30:58,641 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:31:01,034 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:31:01,045 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:31:01,047 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:31:01,053 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_55zeoneb
+2025-04-13 10:31:01,053 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:31:01,360 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:31:07,743 - BatchProcessor - INFO - Processing 9 files with 1 workers
+2025-04-13 10:31:07,764 - BatchProcessor - INFO - Processing file: batch.html
+2025-04-13 10:31:07,769 - BatchProcessor - INFO - Processing file: batch_results.html
+2025-04-13 10:31:07,773 - BatchProcessor - INFO - Processing file: batch_submitted.html
+2025-04-13 10:31:07,775 - BatchProcessor - INFO - Processing file: error.html
+2025-04-13 10:31:07,778 - BatchProcessor - INFO - Processing file: explanation.html
+2025-04-13 10:31:07,780 - BatchProcessor - INFO - Processing file: index.html
+2025-04-13 10:31:07,781 - BatchProcessor - INFO - Processing file: realtime.html
+2025-04-13 10:31:07,784 - BatchProcessor - INFO - Processing file: result.html
+2025-04-13 10:31:07,788 - BatchProcessor - INFO - Processing file: status.html
+2025-04-13 10:31:07,795 - BatchProcessor - INFO - Progress: 9/9 files processed
+2025-04-13 10:31:07,797 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_103107
+2025-04-13 10:31:40,292 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:31:40,917 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:31:40,917 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:31:40,917 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:31:40,932 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_4wyorap6
+2025-04-13 10:31:40,932 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:31:41,172 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:31:43,764 - BatchProcessor - INFO - Processing 7 files with 1 workers
+2025-04-13 10:31:43,792 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:31:43,809 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:31:44,347 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:31:46,825 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:31:47,075 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:31:49,607 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:31:49,872 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:31:52,722 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:31:53,514 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:31:56,041 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:31:56,538 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:31:56,556 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:31:59,332 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:31:59,624 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:32:02,403 - BatchProcessor - INFO - Progress: 7/7 files processed
+2025-04-13 10:32:02,403 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_103143
+2025-04-13 10:32:38,481 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:32:39,011 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:32:39,018 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:32:39,020 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:32:39,021 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_07i8op9l
+2025-04-13 10:32:39,021 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:32:39,219 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:32:40,890 - BatchProcessor - INFO - Processing 7 files with 1 workers
+2025-04-13 10:32:40,924 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:32:40,926 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:32:41,203 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:32:43,027 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:32:43,235 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:32:45,069 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:32:45,248 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:32:47,204 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:32:48,093 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:32:50,289 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:32:50,636 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:32:50,639 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:32:52,628 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:32:52,835 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:32:54,842 - BatchProcessor - INFO - Progress: 7/7 files processed
+2025-04-13 10:32:54,845 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_103240
+2025-04-13 10:37:17,391 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:37:20,080 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:37:20,088 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:37:20,091 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:37:20,095 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_calnae70
+2025-04-13 10:37:20,095 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:37:20,446 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 10:37:23,366 - BatchProcessor - INFO - Processing 7 files with 1 workers
+2025-04-13 10:37:23,377 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:37:24,242 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:37:24,697 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:37:27,689 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:37:27,964 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:37:30,726 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:37:31,048 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:37:33,876 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:37:34,207 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:37:38,272 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:37:38,583 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:37:38,591 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:37:41,059 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:37:41,275 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:37:43,761 - BatchProcessor - INFO - Progress: 7/7 files processed
+2025-04-13 10:37:43,764 - BatchProcessor - INFO - Batch processing complete. Results saved to batch_results\batch_20250413_103723
+2025-04-13 10:39:56,914 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:39:57,483 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:39:57,487 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:39:57,487 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:39:57,490 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_lo6jslxk
+2025-04-13 10:39:57,490 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:39:57,928 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 10:40:00,165 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:40:00,728 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:40:01,211 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:40:04,058 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:40:04,327 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:40:07,003 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:40:07,332 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:40:10,330 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:40:10,597 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:40:13,721 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:40:14,285 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:40:14,293 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:40:17,348 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:40:17,744 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:42:16,331 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:42:16,990 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:42:16,990 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:42:16,990 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:42:16,990 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_0k9ahrta
+2025-04-13 10:42:16,998 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:42:17,333 - BatchProcessor - INFO - Loaded VirusTotal scanner with provided API key
+2025-04-13 10:42:19,179 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:42:19,646 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:42:20,322 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:42:22,757 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:42:22,991 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:42:25,419 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:42:25,682 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:42:28,257 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:42:28,635 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:42:30,862 - BatchProcessor - ERROR - Error in dynamic analysis of node.exe: can only join an iterable
+2025-04-13 10:42:31,365 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:42:31,721 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:42:31,725 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:42:34,464 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:42:34,759 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:43:27,187 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:43:27,779 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:43:27,782 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:43:27,785 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:43:27,787 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_asnsu8k0
+2025-04-13 10:43:27,787 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:43:28,057 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:43:30,431 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:43:30,437 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:43:30,803 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:43:32,816 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:43:33,060 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:43:35,087 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:43:35,376 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:43:37,750 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:43:38,085 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:43:40,360 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:43:40,685 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:43:40,688 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:43:42,901 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:43:43,189 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe
+2025-04-13 10:44:02,140 - BatchProcessor - INFO - Loading ML model from: ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:44:02,931 - BatchProcessor - INFO - Loaded ML model analyzer from ML_model/malwareclassifier-V2.pkl
+2025-04-13 10:44:02,936 - BatchProcessor - ERROR - Error setting up document analyzer: failed to find libmagic.  Check your installation
+2025-04-13 10:44:02,936 - BatchProcessor - ERROR - Error setting up malware type detector: failed to find libmagic.  Check your installation
+2025-04-13 10:44:02,941 - DynamicAnalysis - INFO - Created temporary directory: C:\Users\root\AppData\Local\Temp\dynamic_analysis_it4zgldy
+2025-04-13 10:44:02,941 - BatchProcessor - INFO - Loaded dynamic analyzer
+2025-04-13 10:44:03,325 - BatchProcessor - WARNING - No VirusTotal API key provided. VirusTotal scanning will be skipped.
+2025-04-13 10:44:05,021 - BatchProcessor - INFO - Processing file: attention.pdf
+2025-04-13 10:44:05,029 - BatchProcessor - INFO - Processing file: circularlist.exe
+2025-04-13 10:44:05,408 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\circularlist.exe
+2025-04-13 10:44:07,626 - BatchProcessor - INFO - Processing file: Hello.exe
+2025-04-13 10:44:07,927 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Hello.exe
+2025-04-13 10:44:10,190 - BatchProcessor - INFO - Processing file: Malware.Calc.exe
+2025-04-13 10:44:10,485 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Malware.Calc.exe
+2025-04-13 10:44:12,752 - BatchProcessor - INFO - Processing file: node.exe
+2025-04-13 10:44:13,027 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\node.exe
+2025-04-13 10:44:15,495 - BatchProcessor - INFO - Processing file: Updated Price List for 2025 Business Year.exe
+2025-04-13 10:44:15,990 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\Updated Price List for 2025 Business Year.exe
+2025-04-13 10:44:15,998 - DynamicAnalysis - ERROR - Error executing file: [WinError 740] The requested operation requires elevation
+2025-04-13 10:44:18,301 - BatchProcessor - INFO - Processing file: wildfire-test-pe-file.exe
+2025-04-13 10:44:18,811 - DynamicAnalysis - INFO - Executing file: C:\hackathon\revert-malware\malware\test_samples\wildfire-test-pe-file.exe

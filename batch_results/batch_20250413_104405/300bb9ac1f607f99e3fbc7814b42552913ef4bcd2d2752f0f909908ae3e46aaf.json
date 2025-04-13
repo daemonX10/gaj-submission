@@ -1,0 +1,46 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\Malware.Calc.exe",
+  "file_name": "Malware.Calc.exe",
+  "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 2.55806565284729,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\Malware.Calc.exe",
+      "processes": [
+        {
+          "name": "CalculatorApp.exe",
+          "pid": 4460,
+          "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_11.2502.2.0_x64__8wekyb3d8bbwe\\CalculatorApp.exe"
+        }
+      ],
+      "process_count": 1,
+      "connection_count": 0,
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "execution": {
+        "executed": true,
+        "execution_time": 0.013410329818725586,
+        "exit_code": 0,
+        "terminated": false
+      },
+      "risk_score": 0
+    }
+  }
+}

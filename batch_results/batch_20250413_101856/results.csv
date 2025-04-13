@@ -1,0 +1,2 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+wildfire-test-pe-file.exe,d6f128eb0072d3bf...,True,0.80,Generic,0,"ML,Dynamic",3.38s

@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}Model Explanation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url_for('result', file_id=file_id) }}">Analysis Result</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Model Explanation</li>
+                </ol>
+            </nav>
+            
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-microscope"></i> 
+                        Model Explanation for {{ result.filename }}
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-{% if explanation.prediction == 1 %}danger{% else %}success{% endif %}" role="alert">
+                        <h5 class="alert-heading">
+                            <i class="fas fa-{% if explanation.prediction == 1 %}virus{% else %}shield-alt{% endif %}"></i>
+                            File classified as: <strong>{% if explanation.prediction == 1 %}MALICIOUS{% else %}BENIGN{% endif %}</strong>
+                        </h5>
+                        <p>Confidence: <strong>{{ (explanation.confidence * 100)|round(2) }}%</strong></p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header bg-secondary text-white">
+                                    <h5 class="mb-0">Feature Contribution Visualization</h5>
+                                </div>
+                                <div class="card-body text-center">
+                                    <img src="{{ explanation.image_path }}" alt="SHAP Values" class="img-fluid">
+                                    <p class="mt-2 text-muted"><small>Blue bars show features that increase likelihood of being malware. Red bars decrease likelihood.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header bg-secondary text-white">
+                                    <h5 class="mb-0">Top Contributing Features</h5>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Feature</th>
+                                                <th>Contribution</th>
+                                                <th>Impact</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for feature, value in explanation.top_features %}
+                                            <tr>
+                                                <td>{{ feature }}</td>
+                                                <td>{{ value|round(4) }}</td>
+                                                <td>
+                                                    {% if value > 0 %}
+                                                    <span class="badge bg-danger">Increases malicious score</span>
+                                                    {% else %}
+                                                    <span class="badge bg-success">Decreases malicious score</span>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="mb-0">Explanation Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                The machine learning model has analyzed <strong>{{ result.filename }}</strong> and 
+                                determined it is {% if explanation.prediction == 1 %}malicious{% else %}benign{% endif %} 
+                                with {{ (explanation.confidence * 100)|round(2) }}% confidence.
+                            </p>
+                            
+                            <p>
+                                {% if explanation.prediction == 1 %}
+                                The file exhibits characteristics commonly found in malware. The most significant indicators are:
+                                <ul>
+                                    {% for feature, value in explanation.top_features if value > 0 %}
+                                    <li><strong>{{ feature }}</strong> - This feature increases the malware likelihood by {{ (value * 100)|round(2) }}%</li>
+                                    {% endfor %}
+                                </ul>
+                                {% else %}
+                                The file appears to be legitimate. The most significant indicators of benign behavior are:
+                                <ul>
+                                    {% for feature, value in explanation.top_features if value < 0 %}
+                                    <li><strong>{{ feature }}</strong> - This feature suggests benign behavior</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </p>
+                            
+                            <div class="alert alert-info" role="alert">
+                                <i class="fas fa-info-circle"></i> <strong>How to interpret this result:</strong>
+                                <p class="mb-0">This explanation shows which features of the file contributed most to the classification decision. SHAP (SHapley Additive exPlanations) values show how much each feature pushed the model's prediction toward malicious or benign. Higher positive values indicate features that strongly suggest malware.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="{{ url_for('result', file_id=file_id) }}" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i> Back to Analysis Result
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

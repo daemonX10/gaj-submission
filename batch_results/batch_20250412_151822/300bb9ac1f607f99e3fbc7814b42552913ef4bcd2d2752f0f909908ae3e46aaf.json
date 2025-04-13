@@ -1,0 +1,57 @@
+{
+  "file_path": "test_samples\\Malware.Calc.exe",
+  "file_name": "Malware.Calc.exe",
+  "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Unknown",
+  "risk_score": 49,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.7418289184570312,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "document": {
+      "file_path": "test_samples\\Malware.Calc.exe",
+      "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+      "mime_type": "application/x-dosexec",
+      "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "suspicious_indicators": [
+        "Binary contains suspicious string: http://",
+        "Binary contains suspicious string: https://"
+      ],
+      "extracted_urls": [
+        "http://www.apache.org/<br",
+        "http://www.zeustech.net/<br",
+        "http://www.apache.org/",
+        "http://www.zeustech.net/",
+        "https://\u0000\u0000\u0000\u0000[%s",
+        "http://\u0000ab:"
+      ],
+      "extracted_ips": [
+        "0.0.0.0"
+      ],
+      "risk_score": {
+        "score": 49,
+        "risk_level": "Medium"
+      },
+      "has_macros": false,
+      "has_suspicious_objects": true,
+      "embedded_files": []
+    },
+    "malware_type": {
+      "detected_type": "worm",
+      "confidence": 0.48333333333333334,
+      "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+      "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "all_type_scores": {
+        "ransomware": 0.0,
+        "trojan": 0.4625,
+        "worm": 0.48333333333333334,
+        "spyware": 0.0,
+        "virus": 0.1
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "file_path": ".\\test_samples\\circularlist.exe",
+  "file_name": "circularlist.exe",
+  "file_hash": "9e1be4f020c7fc28d2e21c1528fc5cb59919d531cc925133c112ba58956bb918",
+  "is_malware": false,
+  "confidence": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 3.0041277408599854
+}

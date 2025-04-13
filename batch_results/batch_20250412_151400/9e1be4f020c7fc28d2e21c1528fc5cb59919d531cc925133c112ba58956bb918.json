@@ -1,0 +1,13 @@
+{
+  "file_path": "test_samples\\circularlist.exe",
+  "file_name": "circularlist.exe",
+  "file_hash": "9e1be4f020c7fc28d2e21c1528fc5cb59919d531cc925133c112ba58956bb918",
+  "is_malware": false,
+  "confidence": 0,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.6831557750701904,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": 

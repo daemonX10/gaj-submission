@@ -1,0 +1,7 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+.\test_samples\circularlist.exe,9e1be4f020c7fc28d2e21c1528fc5cb59919d531cc925133c112ba58956bb918,False,0.00,Unknown,0,"ML,VirusTotal",6.24s
+.\test_samples\Hello.exe,94e8c97dd2313778612833c0fdb88a5c97158bd572e4d36770114d3c193a0941,False,0.00,Unknown,0,"ML,VirusTotal",3.71s
+.\test_samples\Malware.Calc.exe,300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf,True,0.80,Unknown,0,"ML,VirusTotal",5.33s
+.\test_samples\node.exe,0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb,False,0.00,Unknown,0,"ML,VirusTotal",11.10s
+.\test_samples\Updated Price List for 2025 Business Year.exe,dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca,True,0.80,Unknown,0,"ML,VirusTotal",5.60s
+.\test_samples\wildfire-test-pe-file.exe,d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783,True,0.80,Unknown,0,"ML,VirusTotal",3.45s

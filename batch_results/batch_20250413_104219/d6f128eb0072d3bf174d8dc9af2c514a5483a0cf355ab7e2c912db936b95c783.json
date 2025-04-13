@@ -1,0 +1,70 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\wildfire-test-pe-file.exe",
+  "file_name": "wildfire-test-pe-file.exe",
+  "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Trojan",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic,VirusTotal",
+  "processing_time": 3.319437265396118,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\wildfire-test-pe-file.exe",
+      "processes": [],
+      "process_count": 0,
+      "connection_count": 0,
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "execution": {
+        "executed": true,
+        "execution_time": 0.012374401092529297,
+        "exit_code": 0,
+        "terminated": false
+      },
+      "risk_score": 0
+    },
+    "virustotal": {
+      "scan_id": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "scan_date": 1744515680,
+      "total": 76,
+      "positives": 41,
+      "sha256": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "md5": "84d00dd0ac52be43f3a7ac83b91ba512",
+      "permalink": "https://www.virustotal.com/gui/file/d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "scans": {
+        "Microsoft": {
+          "detected": true,
+          "result": "PWS:Win32/Zbot!ml",
+          "version": "1.1.25030.1",
+          "update": "20250413"
+        },
+        "Kaspersky": {
+          "detected": true,
+          "result": "HEUR:Trojan.Win32.Agent.gen",
+          "version": "22.0.1.28",
+          "update": "20250413"
+        },
+        "Bkav": {
+          "detected": true,
+          "result": "W32.AIDetectMalware",
+          "version": "2.0.0.1",
+          "update": "20250412"
+        }
+      },
+      "scan_summary": "Showing 3 of 41 positive detections (total scanned: 76)"
+    }
+  }
+}

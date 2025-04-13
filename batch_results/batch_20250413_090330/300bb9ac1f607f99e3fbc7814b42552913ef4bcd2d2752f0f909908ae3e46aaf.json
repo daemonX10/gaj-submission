@@ -1,0 +1,133 @@
+{
+  "file_path": ".\\test_samples\\Malware.Calc.exe",
+  "file_name": "Malware.Calc.exe",
+  "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic,VirusTotal",
+  "processing_time": 3.491572856903076,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "file_path": ".\\test_samples\\Malware.Calc.exe",
+      "execution_info": {
+        "executed": true,
+        "execution_time": 0.042929887771606445,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "terminated": false,
+        "pid": 15988,
+        "children": []
+      },
+      "created_processes": [
+        {
+          "pid": 4756,
+          "name": "git.exe",
+          "exe": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+          "cmdline": [
+            "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+            "credential-manager",
+            "get"
+          ]
+        },
+        {
+          "pid": 6556,
+          "name": "git-credential-manager.exe",
+          "exe": "C:\\Program Files\\Git\\mingw64\\bin\\git-credential-manager.exe",
+          "cmdline": [
+            "git-credential-manager",
+            "get"
+          ]
+        },
+        {
+          "pid": 8596,
+          "name": "CalculatorApp.exe",
+          "exe": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_11.2502.2.0_x64__8wekyb3d8bbwe\\CalculatorApp.exe",
+          "cmdline": [
+            "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_11.2502.2.0_x64__8wekyb3d8bbwe\\CalculatorApp.exe"
+          ]
+        },
+        {
+          "pid": 9268,
+          "name": "git.exe",
+          "exe": "C:\\Program Files\\Git\\cmd\\git.exe",
+          "cmdline": [
+            "C:\\Program Files\\Git\\cmd\\git.exe",
+            "fetch"
+          ]
+        },
+        {
+          "pid": 10396,
+          "name": "conhost.exe",
+          "exe": "C:\\Windows\\System32\\conhost.exe",
+          "cmdline": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ]
+        },
+        {
+          "pid": 13920,
+          "name": "git.exe",
+          "exe": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe",
+          "cmdline": [
+            "git.exe",
+            "fetch"
+          ]
+        },
+        {
+          "pid": 14176,
+          "name": "git-remote-https.exe",
+          "exe": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-https.exe",
+          "cmdline": [
+            "git-remote-https",
+            "origin",
+            "https://github.com/manjesh501/malware.git"
+          ]
+        },
+        {
+          "pid": 15456,
+          "name": "git.exe",
+          "exe": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+          "cmdline": [
+            "git",
+            "remote-https",
+            "origin",
+            "https://github.com/manjesh501/malware.git"
+          ]
+        }
+      ],
+      "file_changes": {
+        "created": [],
+        "modified": [],
+        "deleted": []
+      },
+      "network_activity": [],
+      "behavioral_indicators": [
+        "Multiple process creation"
+      ],
+      "malware_type_indicators": {
+        "likely_type": "worm",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 1,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "risk_score": {
+        "score": 10,
+        "risk_level": "Low"
+      }
+    },
+    "virustotal": {
+      "error": "VirusTotal API key not configured"
+    }
+  }
+}

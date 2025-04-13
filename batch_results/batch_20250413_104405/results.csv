@@ -1,0 +1,7 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+7fc28...,False,0.00,Clean,0,"ML,Dynamic",2.59s
+Hello.exe,94e8c97dd2313778...,False,0.00,Clean,0,"ML,Dynamic",2.56s
+Malware.Calc.exe,300bb9ac1f607f99...,True,0.80,Generic,0,"ML,Dynamic",2.56s
+node.exe,0adb9c625c0751cc...,False,0.00,Clean,0,"ML,Dynamic",2.73s
+Updated Price List for 2025 Business Year.exe,dbbf0fd1d25e6411...,True,0.80,Generic,0,"ML,Dynamic",2.80s
+wildfire-test-pe-file.exe,d6f128eb0072d3bf...,True,0.80,Generic,0,"ML,Dynamic",3.01s

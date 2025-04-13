@@ -1,0 +1,2 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+Malware.Calc.exe,300bb9ac1f607f99...,True,0.80,Generic,0,"ML,Dynamic",2.85s

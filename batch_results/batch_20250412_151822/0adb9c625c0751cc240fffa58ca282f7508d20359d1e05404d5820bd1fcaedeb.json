@@ -1,0 +1,45 @@
+{
+  "file_path": "test_samples\\node.exe",
+  "file_name": "node.exe",
+  "file_hash": "0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb",
+  "is_malware": false,
+  "confidence": 0,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.7405111789703369,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "False"
+    },
+    "document": {
+      "file_path": "test_samples\\node.exe",
+      "file_type": "PE32+ executable (console) x86-64, for MS Windows",
+      "mime_type": "application/x-dosexec",
+      "file_hash": "0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb",
+      "suspicious_indicators": [],
+      "extracted_urls": [],
+      "extracted_ips": [],
+      "risk_score": {
+        "score": 0,
+        "risk_level": "Low"
+      },
+      "has_macros": false,
+      "has_suspicious_objects": false,
+      "embedded_files": []
+    },
+    "malware_type": {
+      "detected_type": "Unknown",
+      "confidence": 0,
+      "file_type": "PE32+ executable (console) x86-64, for MS Windows",
+      "file_hash": "0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb",
+      "all_type_scores": {
+        "ransomware": 0.0,
+        "trojan": 0.0,
+        "worm": 0.0,
+        "spyware": 0.07142857142857142,
+        "virus": 0.0
+      }
+    }
+  }
+}

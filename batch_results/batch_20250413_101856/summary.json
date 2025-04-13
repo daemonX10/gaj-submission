@@ -1,0 +1,10 @@
+{
+  "total_files": 1,
+  "processed_files": 1,
+  "malware_detected": 1,
+  "clean_files": 0,
+  "processing_time_seconds": 3.3935446739196777,
+  "average_time_per_file": 3.3935446739196777,
+  "results_directory": "batch_results\\batch_20250413_101856",
+  "csv_report": "batch_results\\batch_20250413_101856\\results.csv"
+}

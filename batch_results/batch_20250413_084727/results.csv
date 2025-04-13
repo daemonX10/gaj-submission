@@ -1,0 +1,2 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+.\Dataset\dataset_malwares.csv,a766eed81a5bead1f14cee2145c66b5268d23efd12f82f81adf71a53c6b76ebe,False,0.00,Unknown,0,VirusTotal,0.06s

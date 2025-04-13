@@ -1,0 +1,22 @@
+{
+  "file_path": ".\\test_samples\\wildfire-test-pe-file.exe",
+  "file_name": "wildfire-test-pe-file.exe",
+  "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,VirusTotal",
+  "processing_time": 3.4499099254608154,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "error": "'int' object has no attribute 'get'"
+    },
+    "virustotal": {
+      "error": "VirusTotal API key not configured"
+    }
+  }
+}

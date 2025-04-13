@@ -1,0 +1,40 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\wildfire-test-pe-file.exe",
+  "file_name": "wildfire-test-pe-file.exe",
+  "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 2.5872843265533447,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "d6f128eb0072d3bf174d8dc9af2c514a5483a0cf355ab7e2c912db936b95c783",
+      "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\wildfire-test-pe-file.exe",
+      "processes": [],
+      "process_count": 0,
+      "connection_count": 0,
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "execution": {
+        "executed": true,
+        "execution_time": 0.013690948486328125,
+        "exit_code": 0,
+        "terminated": false
+      },
+      "risk_score": 0
+    }
+  }
+}

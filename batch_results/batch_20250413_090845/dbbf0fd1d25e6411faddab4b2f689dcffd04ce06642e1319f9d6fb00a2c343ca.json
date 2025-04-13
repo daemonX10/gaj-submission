@@ -1,0 +1,50 @@
+{
+  "file_path": ".\\test_samples\\Updated Price List for 2025 Business Year.exe",
+  "file_name": "Updated Price List for 2025 Business Year.exe",
+  "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 1.6928980350494385,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "file_path": ".\\test_samples\\Updated Price List for 2025 Business Year.exe",
+      "execution_info": {
+        "executed": false,
+        "execution_time": 0.0,
+        "exit_code": null,
+        "stdout": "",
+        "stderr": "",
+        "terminated": false,
+        "pid": null,
+        "children": [],
+        "error": "[WinError 740] The requested operation requires elevation"
+      },
+      "created_processes": [],
+      "file_changes": {
+        "created": [],
+        "modified": [],
+        "deleted": []
+      },
+      "network_activity": [],
+      "behavioral_indicators": [],
+      "malware_type_indicators": {
+        "likely_type": "Unknown",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 0,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "risk_score": 0
+    }
+  }
+}

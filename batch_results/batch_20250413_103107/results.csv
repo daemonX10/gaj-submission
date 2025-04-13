@@ -1,0 +1,10 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+batch.html,cfdf0ff310f1cc30...,False,0.00,Clean,0,,0.00s
+batch_results.html,e5f2e49e177ce2ab...,False,0.00,Clean,0,,0.00s
+batch_submitted.html,7df4ab8dd90d0aa1...,False,0.00,Clean,0,,0.00s
+error.html,08a55447c511a059...,False,0.00,Clean,0,,0.00s
+explanation.html,30bc5dc11fceff7f...,False,0.00,Clean,0,,0.00s
+index.html,64de65467fc4d4fe...,False,0.00,Clean,0,,0.00s
+realtime.html,b25e62f3c99dded0...,False,0.00,Clean,0,,0.00s
+result.html,f90fd075736bd767...,False,0.00,Clean,0,,0.00s
+status.html,5f933567951a1445...,False,0.00,Clean,0,,0.00s

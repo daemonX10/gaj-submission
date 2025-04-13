@@ -1,0 +1,7 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+circularlist.exe,9e1be4f020c7fc28...,False,0.00,Clean,0,"ML,VirusTotal",2.56s
+Hello.exe,94e8c97dd2313778...,False,0.00,Clean,0,"ML,VirusTotal",2.35s
+Malware.Calc.exe,300bb9ac1f607f99...,True,0.80,Generic,0,"ML,VirusTotal",2.37s
+node.exe,0adb9c625c0751cc...,False,0.00,Clean,0,"ML,VirusTotal",3.16s
+Updated Price List for 2025 Business Year.exe,dbbf0fd1d25e6411...,True,0.80,Generic,0,"ML,VirusTotal",2.88s
+wildfire-test-pe-file.exe,d6f128eb0072d3bf...,True,0.80,Generic,0,"ML,VirusTotal",3.10s

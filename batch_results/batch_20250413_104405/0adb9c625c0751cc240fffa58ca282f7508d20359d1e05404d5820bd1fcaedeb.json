@@ -1,0 +1,9 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\node.exe",
+  "file_name": "node.exe",
+  "file_hash": "0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb",
+  "is_malware": false,
+  "confidence": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 2.7266204357147217
+}

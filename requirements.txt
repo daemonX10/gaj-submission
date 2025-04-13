@@ -1,0 +1,86 @@
+# Core dependencies
+flask
+joblib
+numpy
+pandas
+scikit-learn
+pefile
+requests
+
+# VirusTotal API integration
+virustotal-api
+vt-py
+
+# Document analysis
+python-magic
+olefile
+zipfile38
+lxml
+
+# Real-time monitoring
+watchdog
+psutil
+
+# Visualization and model explanation
+matplotlib
+seaborn
+shap
+lime
+
+# Web interface improvements
+Flask-Bootstrap
+Flask-WTF
+WTForms
+
+# System utilities
+python-magic-bin; sys_platform == 'win32'
+pywin32; sys_platform == 'win32'
+pandas
+numpy
+pefile
+joblib
+# Data processing
+tqdm
+openpyxl
+validators
+
+scikit-learn
+# Security and production
+werkzeug
+gunicorn; sys_platform != 'win32'
+waitress
+python-dotenv
+
+# Testing
+pytest
+
+# Added from the code block
+matplotlib
+numpy
+psutil
+PyQt5
+pandas
+Flask
+joblib
+scikit-learn
+Werkzeug
+requests
+click
+Flask-Bootstrap
+Flask-WTF
+Jinja2
+MarkupSafe
+python-dotenv
+WTForms
+pytest
+tqdm
+pefile
+pywin32; sys_platform == 'win32'
+mlutil
+validators
+vt-py
+openpyxl
+shap
+lime
+olefile 
+python-magic-bin

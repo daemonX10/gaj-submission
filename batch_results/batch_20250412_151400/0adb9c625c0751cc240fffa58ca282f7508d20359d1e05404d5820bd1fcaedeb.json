@@ -1,0 +1,13 @@
+{
+  "file_path": "test_samples\\node.exe",
+  "file_name": "node.exe",
+  "file_hash": "0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb",
+  "is_malware": false,
+  "confidence": 0,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.7753121852874756,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": 

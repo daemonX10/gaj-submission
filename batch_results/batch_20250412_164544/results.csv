@@ -1,0 +1,5 @@
+File,Hash,Is Malware,Confidence,Malware Type,Risk Score,Analysis Method,Processing Time
+test_samples\Malware.Calc.exe,,False,0.00,Unknown,0,,0.00s
+test_samples\circularlist.exe,9e1be4f020c7fc28d2e21c1528fc5cb59919d531cc925133c112ba58956bb918,False,0.00,Unknown,0,"ML,Document,Type",0.28s
+test_samples\node.exe,0adb9c625c0751cc240fffa58ca282f7508d20359d1e05404d5820bd1fcaedeb,False,0.00,Unknown,0,"ML,Document,Type",0.28s
+test_samples\Hello.exe,94e8c97dd2313778612833c0fdb88a5c97158bd572e4d36770114d3c193a0941,False,0.00,Unknown,0,"ML,Document,Type",0.32s

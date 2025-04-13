@@ -1,0 +1,83 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\Updated Price List for 2025 Business Year.exe",
+  "file_name": "Updated Price List for 2025 Business Year.exe",
+  "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Generic",
+  "risk_score": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 2.7991201877593994,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+      "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\Updated Price List for 2025 Business Year.exe",
+      "processes": [
+        {
+          "name": "git.exe",
+          "pid": 2144,
+          "path": "C:\\Program Files\\Git\\cmd\\git.exe",
+          "has_args": true
+        },
+        {
+          "name": "git.exe",
+          "pid": 4432,
+          "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+          "has_args": true
+        },
+        {
+          "name": "conhost.exe",
+          "pid": 5368,
+          "path": "C:\\Windows\\System32\\conhost.exe",
+          "has_args": true
+        },
+        {
+          "name": "git.exe",
+          "pid": 6736,
+          "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+          "has_args": true
+        },
+        {
+          "name": "git.exe",
+          "pid": 8640,
+          "path": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe",
+          "has_args": true
+        },
+        {
+          "name": "git-remote-https.exe",
+          "pid": 15748,
+          "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-https.exe",
+          "has_args": true
+        }
+      ],
+      "process_count": 6,
+      "connection_count": 0,
+      "behavioral_indicators": [
+        "Multiple process creation"
+      ],
+      "malware_type_indicators": {
+        "likely_type": "worm",
+        "type_scores": {
+          "ransomware": 0,
+          "trojan": 0,
+          "worm": 1,
+          "spyware": 0,
+          "virus": 0
+        }
+      },
+      "execution": {
+        "executed": false,
+        "execution_time": 0.002259969711303711,
+        "exit_code": null,
+        "terminated": false
+      },
+      "risk_score": {
+        "score": 10,
+        "risk_level": "Low"
+      }
+    }
+  }
+}

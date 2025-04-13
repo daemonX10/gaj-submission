@@ -1,0 +1,49 @@
+{
+  "file_path": ".\\test_samples\\Malware.Calc.exe",
+  "file_name": "Malware.Calc.exe",
+  "file_hash": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+  "is_malware": true,
+  "confidence": 0.8701298701298701,
+  "malware_type": "Trojan",
+  "risk_score": 0,
+  "analysis_method": "ML,VirusTotal",
+  "processing_time": 3.907992362976074,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "error": "can only join an iterable"
+    },
+    "virustotal": {
+      "scan_id": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "scan_date": 1743908626,
+      "total": 77,
+      "positives": 67,
+      "sha256": "300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "md5": "041a28eda8a0b003ac54df9ef74d0069",
+      "permalink": "https://www.virustotal.com/gui/file/300bb9ac1f607f99e3fbc7814b42552913ef4bcd2d2752f0f909908ae3e46aaf",
+      "scans": {
+        "Microsoft": {
+          "detected": true,
+          "result": "Trojan:Win32/Meterpreter.O",
+          "version": "1.1.25030.1",
+          "update": "20250405"
+        },
+        "Kaspersky": {
+          "detected": true,
+          "result": "HEUR:Trojan.Win32.Generic",
+          "version": "22.0.1.28",
+          "update": "20250406"
+        },
+        "Symantec": {
+          "detected": true,
+          "result": "Packed.Generic.347",
+          "version": "1.22.0.0",
+          "update": "20250405"
+        }
+      },
+      "scan_summary": "Showing 3 of 67 positive detections (total scanned: 77)"
+    }
+  }
+}

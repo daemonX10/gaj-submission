@@ -1,0 +1,22 @@
+{
+  "file_path": "test_samples\\Updated Price List for 2025 Business Year.exe",
+  "file_name": "Updated Price List for 2025 Business Year.exe",
+  "file_hash": "dbbf0fd1d25e6411faddab4b2f689dcffd04ce06642e1319f9d6fb00a2c343ca",
+  "is_malware": true,
+  "confidence": 0.8,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,VirusTotal",
+  "processing_time": 2.192078113555908,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": "True"
+    },
+    "dynamic": {
+      "error": "'int' object has no attribute 'get'"
+    },
+    "virustotal": {
+      "error": "VirusTotal API key not configured"
+    }
+  }
+}

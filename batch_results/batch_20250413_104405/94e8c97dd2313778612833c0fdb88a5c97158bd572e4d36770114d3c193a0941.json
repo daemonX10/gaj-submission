@@ -1,0 +1,9 @@
+{
+  "file_path": "C:\\hackathon\\revert-malware\\malware\\test_samples\\Hello.exe",
+  "file_name": "Hello.exe",
+  "file_hash": "94e8c97dd2313778612833c0fdb88a5c97158bd572e4d36770114d3c193a0941",
+  "is_malware": false,
+  "confidence": 0,
+  "analysis_method": "ML,Dynamic",
+  "processing_time": 2.561410665512085
+}

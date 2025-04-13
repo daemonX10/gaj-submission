@@ -1,0 +1,13 @@
+{
+  "file_path": "test_samples\\Hello.exe",
+  "file_name": "Hello.exe",
+  "file_hash": "94e8c97dd2313778612833c0fdb88a5c97158bd572e4d36770114d3c193a0941",
+  "is_malware": false,
+  "confidence": 0,
+  "malware_type": "Unknown",
+  "risk_score": 0,
+  "analysis_method": "ML,Document,Type",
+  "processing_time": 0.6821544170379639,
+  "detailed_results": {
+    "ml_model": {
+      "is_malware": 
